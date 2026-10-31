@@ -1,53 +1,46 @@
-# Problem Title: [ValutCore]
+Problem Title: VaultCore
 
-**Problem ID:** [CP001]
+Problem ID: CP001
 
-## Team Members
+Team Members
 
-1. **Name:** [Ankitha M] | **USN:** [1AT24CS021]
-2. **Name:** [Anjalee] | **USN:** [1AT24CS020 ]
+- Name: Ankitha M | USN: 1AT24CS021
+- Name: Anjalee | USN: 1AT24CS020
 
+How to Run the Program
 
-## How to Run the Program
+Prerequisites:
 
-**Prerequisites:**
-- Required compiler or interpreter installed.
+- Java Development Kit (JDK) 17 installed.
 
-**Steps:**
+Steps:
+
 1. Clone or download this repository.
 2. Open the project folder in your terminal.
 3. Compile the program:
 
-   ```bash
-   gcc main.c -o main
-   ```
+javac Main.java
 
 4. Execute the program:
 
-   ```bash
-   ./main
-   ```
+java Main
 
-   For Windows, use:
+Features Implemented
 
-   ```bash
-   main.exe
-   ```
+1. Open a bank account with an automatically generated account number.
+2. Deposit and withdraw money while enforcing minimum balance rules.
+3. Display the last five transactions for an account.
+4. Search for an account by account number or name.
+5. Close an account only when its balance is zero.
 
-## Features Implemented
+Note: These features are planned; implementation and testing are not yet complete.
 
-- [Describe feature 1]
-- [Describe feature 2]
-- [Describe feature 3]
+Sample Run
 
-## Sample Run
+Input:
 
-**Input:**
-```text
-[Enter sample input]
-```
+Will be added after the program is implemented.
 
-**Output:**
-```text
-[Enter corresponding output]
-```
+Output:
+
+Will be added after the program is implemented.
