@@ -1,46 +1,74 @@
-Problem Title: VaultCore
+# Problem Title: VaultCore
 
-Problem ID: CP001
+**Problem ID: CP001**
 
-Team Members
+## Team Members
 
-- Name: Ankitha M | USN: 1AT24CS021
 - Name: Anjalee | USN: 1AT24CS020
+- Name: Ankitha M | USN: 1AT24CS021
 
-How to Run the Program
 
-Prerequisites:
+## How to Run the Program
 
-- Java Development Kit (JDK) 17 installed.
+**Prerequisites:**
 
-Steps:
+- Python 3.10 or newer installed.
+- No external packages are required.
+
+**Steps:**
 
 1. Clone or download this repository.
 2. Open the project folder in your terminal.
-3. Compile the program:
+3. Navigate to the project directory:
 
-javac Main.java
+   ```bash
+   cd capstone-CP001-Anjalee-Ankitha
+   ```
 
-4. Execute the program:
+4. Run the program:
 
-java Main
+   ```bash
+   python main.py
+   ```
 
-Features Implemented
+5. The program automatically creates and maintains the following CSV files for storing account and transaction details:
 
-1. Open a bank account with an automatically generated account number.
-2. Deposit and withdraw money while enforcing minimum balance rules.
-3. Display the last five transactions for an account.
-4. Search for an account by account number or name.
-5. Close an account only when its balance is zero.
+   - `data/accounts.csv`
+   - `data/transactions.csv`
 
-Note: These features are planned; implementation and testing are not yet complete.
+## Features Implemented
 
-Sample Run
+1. Open a Savings or Current bank account with an automatically generated account number.
+2. Deposit and withdraw money with proper validation.
+3. Display the latest five transactions as a mini statement.
+4. Search active accounts using account number or account holder name.
+5. Close a bank account only when its balance is zero.
+6. Store and retrieve account and transaction details using CSV files.
 
-Input:
+## Sample Run
 
-Will be added after the program is implemented.
+**Input:**
 
-Output:
+The user interacts with the program through a Python console menu to perform banking operations such as opening an account, depositing money, withdrawing money, searching for accounts, and viewing transaction history.
 
-Will be added after the program is implemented.
+**Output:**
+
+The program displays account details, updated balances, transaction history, and appropriate success or validation messages based on the user's selections.
+
+## Testing
+
+To execute the automated test cases, run:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The test suite checks account operations, transaction handling, validations, and CSV storage functionality.
+
+## Important Notes
+
+- Monetary values are handled using `Decimal` to ensure accurate calculations.
+- Withdrawals cannot exceed the available account balance.
+- Closed accounts cannot be used for further transactions.
+- An account must have a zero balance before closure.
+- Account and transaction records are automatically saved and loaded using CSV files.

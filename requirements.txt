@@ -1,0 +1,2 @@
+# VaultCore uses only the Python standard library.
+# No packages need to be installed.
