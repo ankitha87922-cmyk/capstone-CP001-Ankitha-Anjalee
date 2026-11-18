@@ -32,7 +32,6 @@ def run_console(
 4. Mini statement
 5. Search account
 6. Close account
-7. Apply monthly interest (optional)
 0. Exit
 ===========================================
 """
